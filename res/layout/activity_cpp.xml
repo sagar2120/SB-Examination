@@ -1,0 +1,111 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mtc.sb_examination.cpp"
+    android:background = "@drawable/gradient_2">
+
+    <TextView android:text="" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="Question: 1/x"
+        android:id="@+id/text_View_question_count"
+        android:layout_x="15dp"
+        android:textColor="@android:color/black"
+        android:layout_y="83dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="183dp"
+        android:layout_height="33dp"
+        android:text="marks: 0"
+        android:id="@+id/text_view_score"
+        android:layout_x="137dp"
+        android:layout_y="17dp" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:10"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentEnd="true"
+
+        android:layout_x="234dp"
+        android:layout_y="75dp" />
+
+
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="first question\n hello question"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_x="4dp"
+        android:layout_y="149dp" />
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radio_group"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_x="0dp"
+        android:layout_y="224dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="118dp">
+
+
+        <RadioButton android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 1"
+            android:onClick="onRadioButtonClicked"/>
+
+
+        <RadioButton android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 2"
+            android:onClick="onRadioButtonClicked"/>
+
+
+        <RadioButton android:id="@+id/button15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 3"
+            android:onClick="onRadioButtonClicked"/>
+
+
+        <RadioButton android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 4"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="confirm"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="10dp"
+        android:layout_x="3dp"
+        android:layout_y="412dp" />
+
+</AbsoluteLayout>

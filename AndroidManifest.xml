@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mtc.sb_examination" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".startnow"
+            android:label="@string/title_activity_startnow" >
+        </activity>
+        <activity
+            android:name=".submit"
+            android:label="@string/title_activity_submit" >
+        </activity>
+        <activity
+            android:name=".python"
+            android:label="@string/title_activity_python" >
+        </activity>
+        <activity
+            android:name=".cpp"
+            android:label="@string/title_activity_cpp" >
+        </activity>
+        <activity
+            android:name=".java"
+            android:label="@string/title_activity_java" >
+        </activity>
+        <activity
+            android:name=".activity_result"
+            android:label="@string/title_activity_activity_result" >
+        </activity>
+    </application>
+
+</manifest>
